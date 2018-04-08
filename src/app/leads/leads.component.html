@@ -1,0 +1,52 @@
+<div class="card">
+    <div class="card-header">
+      {{pageTitle}}
+    </div>
+
+    <div class="card-body">
+    
+        <div class="table-reponsive">
+          <table class="table" *ngIf="leads && leads.length">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>email</th>
+                <th>Phone</th>
+                <th>Location</th>
+                <th>Lead Status</th>
+                <th>Lead Owner</th>
+                <th>Lead Source</th>
+                <th>Created By</th>
+                <th>Created Time</th>
+                <th>Updated Time</th>
+                <th>Follow-up Date</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+              <tr *ngFor="let lead of leads">
+                <td>
+                  <a [routerLink]="['/leads',lead.leadId]">
+                  {{lead.leadName}}
+                </a>
+                </td>
+                <td>{{lead.email}}</td>
+                <td>{{lead.phone}}</td>
+                <td>{{lead.location}}</td>
+                <td>{{lead.leadStatus}}</td>
+                <td>{{lead.leadOwner}}</td>
+                <td>{{lead.leadSource}}</td>
+                <td>{{lead.createdBy}}</td>
+                <td>{{lead.createdTime}}</td>
+                <td>{{lead.updatedTime}}</td>
+                <td>{{lead.followupDate}}</td>
+                <td>{{lead.message}}</td>
+              </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div> 
+
+</div>

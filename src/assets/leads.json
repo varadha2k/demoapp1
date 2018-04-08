@@ -1,0 +1,32 @@
+[
+  {
+  "leadId": 1,
+  "leadName": "John Smart",
+  "email": "john@abc.com",
+  "phone": "512 123 4567",
+  "location": "Austin",
+  "leadStatus": "New Lead",
+  "leadOwner": "ABC",
+  "leadSource": "Adworks",
+  "createdBy": "Automation",
+  "createdTime": "Apr 6, 2018 03:10 PM",
+  "updatedTime": "Apr 6, 2018 03:10 PM",
+  "followupDate": "Apr 8 2018",
+  "message": "This is Lead 1"
+  },
+  {
+  "leadId": 2,
+  "leadName": "Peter Who",
+  "email": "peter@abc.com",
+  "phone": "512 456 4567",
+  "location": "Parsipanny",
+  "leadStatus": "Consultation - No Sale",
+  "leadOwner": "ABC",
+  "leadSource": "Website",
+  "createdBy": "Automation",
+  "createdTime": "Apr 7, 2018 03:10 PM",
+  "updatedTime": "Apr 7, 2018 03:10 PM",
+  "followupDate": "Apr 9 2018",
+  "message": "This is Lead 2"
+  }
+]

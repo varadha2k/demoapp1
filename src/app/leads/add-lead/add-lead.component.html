@@ -1,0 +1,50 @@
+<div class="card">
+  <div class="card-content">
+    <div class="card-title"> Add Lead</div>
+
+      <form (ngSubmit) = "onSubmit()">
+
+          <div class="form-group">
+              <label for="leadName">Lead Name:</label>
+              <input type="text" placeholder="Add Lead Name" class="form-control" id="leadName" [(ngModel)]="lead.leadName" name="leadName">
+          </div>
+          <div class="form-group">
+              <label for="leadName">email:</label>
+              <input type="text" placeholder="Add email" class="form-control" id="email" [(ngModel)]="lead.email" name="email">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Phone:</label>
+              <input type="text" placeholder="Add Phone" class="form-control" id="phone" [(ngModel)]="lead.phone" name="phone">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Location:</label>
+              <input type="text" placeholder="Add Location" class="form-control" id="location" [(ngModel)]="lead.location" name="location">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Lead Status:</label>
+              <input type="text" placeholder="Add Lead Status" class="form-control" id="location" [(ngModel)]="lead.leadStatus" name="leadStatus">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Lead Owner:</label>
+              <input type="text" placeholder="Add Lead Owner" class="form-control" id="leadOwner" [(ngModel)]="lead.leadOwner" name="leadOwner">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Lead Source:</label>
+              <input type="text" placeholder="Add Lead Source" class="form-control" id="leadSource" [(ngModel)]="lead.leadSource" name="leadSource">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Followup Date:</label>
+              <input type="text" placeholder="Add Followup Date" class="form-control" id="followupDate" [(ngModel)]="lead.followupDate" name="followupDate">
+          </div>
+          <div class="form-group">
+              <label for="leadName">Message:</label>
+              <input type="text" placeholder="Add Message" class="form-control" id="location" [(ngModel)]="lead.message" name="message">
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+
+  </div>
+
+</div>
