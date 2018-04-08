@@ -1,0 +1,33 @@
+[
+  {
+      "productId": 1,
+      "productName": "product 1",
+      "productCode": "PC1",
+      "releaseDate": "Mar 22, 2001",
+      "description": "about the product 1",
+      "price": 1.2,
+      "starRating": 4.5,
+      "imageUrl" : "http://placehold.it/120x120&text=image1"
+    },
+    {
+      "productId": 2,
+      "productName": "product 2",
+      "productCode": "PC2",
+      "releaseDate": "Mar 22, 2002",
+      "description": "about the product 2",
+      "price": 2.2,
+      "starRating": 3.5,
+      "imageUrl" : "http://placehold.it/120x120&text=image2"
+    },
+    {
+      "productId": 3,
+      "productName": "product 3",
+      "productCode": "PC3",
+      "releaseDate": "Mar 22, 2003",
+      "description": "about the product 3",
+      "price": 2.2,
+      "starRating": 2.5,
+      "imageUrl" : "http://placehold.it/120x120&text=image3"
+    }
+
+]
