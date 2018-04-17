@@ -1,0 +1,72 @@
+<div class="container-fluid" *ngIf="lead">
+
+    <br>
+    <h3> {{pageTitle}}</h3>
+    <hr>
+
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="leadName">Lead Name:</label>
+            <input type="text" placeholder="Add Lead Name" class="form-control" id="leadName" [(ngModel)]="lead.leadName" name="leadName">
+        </div>
+
+        <div class="col-sm-6">
+            <label for="leadName">email:</label>
+            <input type="text" placeholder="Add email" class="form-control" id="email" [(ngModel)]="lead.email" name="email">
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="leadName">Phone:</label>
+            <input type="text" placeholder="Add Phone" class="form-control" id="phone" [(ngModel)]="lead.phone" name="phone">
+        </div>
+
+        <div class="col-sm-6">
+            <label for="leadName">Location:</label>
+            <input type="text" placeholder="Add Location" class="form-control" id="location" [(ngModel)]="lead.location" name="location">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="leadName">Lead Status:</label>
+            <input type="text" placeholder="Add Lead Status" class="form-control" id="location" [(ngModel)]="lead.leadStatus" name="leadStatus">
+        </div>
+        <div class="col-sm-6">
+            <label for="leadName">Lead Owner:</label>
+            <input type="text" placeholder="Add Lead Owner" class="form-control" id="leadOwner" [(ngModel)]="lead.leadOwner" name="leadOwner">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="leadName">Lead Source:</label>
+            <input type="text" placeholder="Add Lead Source" class="form-control" id="leadSource" [(ngModel)]="lead.leadSource" name="leadSource">
+        </div>
+        <div class="col-sm-6">
+            <label for="leadName">Followup Date:</label>
+            <input type="text" placeholder="Add Followup Date" class="form-control" id="followupDate" [(ngModel)]="lead.followupDate"
+                name="followupDate">
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="leadName">Message:</label>
+            <input type="text" placeholder="Add Message" class="form-control" id="location" [(ngModel)]="lead.message" name="message">
+        </div>
+    </div>
+
+
+    <div class="form-group row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+            <button (click)="deleteLead(lead)" type="button" class="btn btn-primary">Delete Lead</button>
+        </div>
+        <div class="col-sm-3">
+            <button (click)="editLead($event, lead)" type="button" class="btn btn-primary">Edit Lead</button>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+</div>

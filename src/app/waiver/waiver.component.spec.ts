@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StarComponentComponent } from './star-component.component';
+import { WaiverComponent } from './waiver.component';
 
-describe('StarComponentComponent', () => {
-  let component: StarComponentComponent;
-  let fixture: ComponentFixture<StarComponentComponent>;
+describe('WaiverComponent', () => {
+  let component: WaiverComponent;
+  let fixture: ComponentFixture<WaiverComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StarComponentComponent ]
+      declarations: [ WaiverComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StarComponentComponent);
+    fixture = TestBed.createComponent(WaiverComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

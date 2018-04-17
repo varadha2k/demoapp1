@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ILead } from './lead';
 import {LeadServiceService} from '../services/lead-service.service';
+import { ILead } from '../domain/lead';
 
 @Component({
   selector: 'app-leads',

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LeadServiceService } from '../../services/lead-service.service';
-import { ILead } from '../lead';
+import { Router } from '@angular/router';
+import { ILead } from '../../domain/lead';
 
 @Component({
   selector: 'app-add-lead',
@@ -24,7 +25,7 @@ export class AddLeadComponent implements OnInit {
     "message": ""
   };
 
-  constructor(leadService: LeadServiceService) {
+  constructor(leadService: LeadServiceService, private router:Router) {
     this._leadService = leadService;
    }
 
@@ -34,6 +35,9 @@ export class AddLeadComponent implements OnInit {
   onSubmit()
   {
     this._leadService.addLead(this.lead);
+    this.lead = {};
+    this.router.navigate([`/home`]);
+
   }
 
 }
